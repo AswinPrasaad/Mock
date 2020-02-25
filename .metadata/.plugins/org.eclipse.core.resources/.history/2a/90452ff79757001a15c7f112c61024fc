@@ -1,0 +1,41 @@
+package com.mockathon.mainController;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.mockathon.modelPojo.Users;
+import com.mockathon.service.ServiceIntf;
+
+@RestController
+public class MainController {
+
+	@Autowired
+	ServiceIntf serviceIntf;
+
+	@RequestMapping(value = "/index")
+	public ModelAndView index() {
+		return new ModelAndView("login");
+	}
+
+	@GetMapping(value = "/showRegistration")
+	public ModelAndView registration(Users user) {
+		return new ModelAndView("registrationPage");
+	}
+
+	@PostMapping(value = "/addUser")
+	public ModelAndView addUser(@Validated @ModelAttribute("user") Users user, BindingResult bindingResult) {
+		if (bindingResult.hasErrors()) {
+			return new ModelAndView("registrationPage");
+		}
+		serviceIntf.save(user);
+		return new ModelAndView("login");
+	}
+
+}

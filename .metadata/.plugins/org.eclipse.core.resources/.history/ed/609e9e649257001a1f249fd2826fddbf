@@ -1,0 +1,13 @@
+package com.mockathon.service;
+
+import com.mockathon.modelPojo.Users;
+
+public class ServiceImpl implements ServiceIntf {
+
+	@Override
+	public void save(Users user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

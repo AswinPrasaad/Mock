@@ -1,0 +1,5 @@
+package com.mockathon.service;
+
+public class ServiceImpl implements ServiceIntf {
+
+}

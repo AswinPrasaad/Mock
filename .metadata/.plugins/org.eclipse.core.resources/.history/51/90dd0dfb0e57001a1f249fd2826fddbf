@@ -1,0 +1,5 @@
+package com.mockathon.service;
+
+public interface ServiceIntf {
+
+}

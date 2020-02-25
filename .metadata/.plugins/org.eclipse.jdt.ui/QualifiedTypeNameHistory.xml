@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.springboot.curd.FirstDemo.ServiceLayer.DemoServiceIntf"/>
+<fullyQualifiedTypeName name="com.mockathon.service.ServiceIntf"/>
+<fullyQualifiedTypeName name="com.mockathon.Dao.DaoIntf"/>
+<fullyQualifiedTypeName name="com.mockathon.modelPojo.Users"/>
+</qualifiedTypeNameHistroy>

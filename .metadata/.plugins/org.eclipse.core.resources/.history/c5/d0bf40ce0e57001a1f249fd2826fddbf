@@ -1,0 +1,7 @@
+package com.mockathon.modelPojo;
+
+public class User {
+
+	
+	private Integer uid;
+}

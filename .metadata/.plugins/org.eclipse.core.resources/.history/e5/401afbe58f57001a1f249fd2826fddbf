@@ -1,0 +1,21 @@
+package com.mockathon.modelPojo;
+
+import org.hibernate.validator.constraints.NotEmpty;
+
+public class Customers {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int userId;
+	@NotEmpty(message="Should not be empty")
+	private String userName;
+	//@NotNull
+	private String address;
+    
+	//@NotNull
+	@NotEmpty(message="Should not be empty")
+	private String password;
+	public int getUserId() {
+		return userId;
+	
+}

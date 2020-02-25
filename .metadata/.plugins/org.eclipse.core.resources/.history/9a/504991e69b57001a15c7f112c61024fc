@@ -1,0 +1,62 @@
+package com.mockathon.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mockathon.Dao.DaoIntf;
+import com.mockathon.modelPojo.Users;
+import com.springboot.curd.FirstDemo.DemoDaoLayer.DemoDaoIntf;
+import com.springboot.curd.FirstDemo.Model.User;
+
+@Service
+public class ServiceImpl implements ServiceIntf {
+
+	
+	
+	@Autowired
+	DaoIntf dao;
+	
+	@Override
+	public void save(Users user) {
+	dao.save(user);
+		
+	}
+
+/*	@Override
+	public List<Users> findAll(Users user) {
+		
+		return (List<Users>) dao.findAll();
+		
+	}
+
+	@Override
+	@Transactional
+	public List<Users> delete(int id) {
+		
+		return dao.deleteByUserId(id);
+	}
+
+	
+
+
+
+	@Override
+	@Transactional
+	public User findByUserId(int id) {
+		
+		return dao.findOne(id);
+	}
+
+	@Override
+	public List<Users> findByUserName(String name) {
+		
+		return dao.findAllByUserName(name);
+	}
+
+*/
+}

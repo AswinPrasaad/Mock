@@ -1,0 +1,9 @@
+package com.mockathon.service;
+
+import com.mockathon.modelPojo.Users;
+
+public interface ServiceIntf {
+
+	void save(Users user);
+
+}

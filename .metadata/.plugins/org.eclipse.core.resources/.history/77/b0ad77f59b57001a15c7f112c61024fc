@@ -1,0 +1,26 @@
+package com.mockathon.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.mockathon.modelPojo.Users;
+
+public interface ServiceIntf {
+
+
+	void save(Users user);
+
+	List<Users> findAll(Users user);
+
+	List<Users> delete(int id);
+
+	
+
+	Users findByUserId(int id);
+
+	List<Users> findByUserName(String name);
+	
+
+	
+	
+}

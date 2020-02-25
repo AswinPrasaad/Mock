@@ -1,0 +1,22 @@
+package com.mockathon.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.mockathon.Dao.DaoIntf;
+import com.mockathon.modelPojo.Users;
+
+
+@Service
+public class ServiceImpl implements ServiceIntf {
+
+	@Autowired
+	DaoIntf daoIntf;
+	
+	@Override
+	public void save(Users user) {
+		daoIntf.save(user);
+		
+	}
+
+}

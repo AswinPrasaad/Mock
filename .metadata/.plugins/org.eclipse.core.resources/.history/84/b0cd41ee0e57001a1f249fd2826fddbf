@@ -1,0 +1,9 @@
+package com.mockathon.Dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.mockathon.modelPojo.User;
+
+public interface DaoInf extends CrudRepository<User, Integer> {
+
+}

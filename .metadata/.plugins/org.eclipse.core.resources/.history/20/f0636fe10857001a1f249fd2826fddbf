@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package com.mockathon;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+/**
+ * @author AswinN
+ *
+ */
+@MockathonSpringBootApplication
+@ComponentScan(basePackages="com.mockathon")
+//@EnableAutoConfiguration
+public class SpringBootApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Springbootapplication.class, args);
+		
+	}
+
+}
+
+
